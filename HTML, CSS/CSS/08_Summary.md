@@ -107,4 +107,8 @@ HTML 요소의 기본 위치란 해당 요소가 정적 위치(static position) 
 |cursor|	표시되는 마우스 커서의 모양을 설정함.|
 |overflow	|내용(content)의 크기가 해당 요소의 박스(box)를 넘어갈 때 어떻게 처리할지를 설정함.|
 |overflow-x	|내용(content)의 크기가 해당 요소의 수평 방향으로 박스(box)를 넘어갈 때 어떻게 처리할지를 설정함.|
+<<<<<<< HEAD
 |overflow-y|	내용(content)의 크기가 해당 요소의 수직 방향으로 박스(box)를 넘어갈 때 어떻게 처리할지를 설정함.|
+=======
+|overflow-y|	내용(content)의 크기가 해당 요소의 수직 방향으로 박스(box)를 넘어갈 때 어떻게 처리할지를 설정함.|
+>>>>>>> 2860e77d125c3e3b1018df25f7c4b9b81e232cea
