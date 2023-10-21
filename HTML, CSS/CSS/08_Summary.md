@@ -21,8 +21,6 @@ position 속성값이 static으로 설정된 요소는 top, right, bottom, left 
     div { position: static; }
 
 </style>
-
-
 ```
 2. 상대 위치(relative position) 지정 방식
    
@@ -90,8 +88,6 @@ HTML 요소의 기본 위치란 해당 요소가 정적 위치(static position) 
     .absolute { position: absolute; }
 
 </style>
-
-
  ```
 
  ### CSS position 속성
