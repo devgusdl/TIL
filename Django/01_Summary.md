@@ -5,7 +5,7 @@ Django는 파이썬 웹 프레임워크이다.
 웹을 개발하기 위한 대부분의 기능들을 제공하기 때문에, Django만으로도 규모가 있는 웹 서비스를 개발할 수 있다.
 Flask에 비해서 커뮤니티가 크고, 잘 활성화 되어있기 때문에 정보교류가 활발한 편이다.
 
-![Django](image1.png)
+![Django](structure.png)
 ## Django 설치
 
 
