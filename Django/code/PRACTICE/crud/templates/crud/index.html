@@ -1,0 +1,17 @@
+{% extends "base2.html" %}
+
+{% block content %}
+<h1>Index</h1>
+
+<ul>
+  {% for s in students %}
+  <li>
+    <!-- <a href="/school/{{ s.pk }}/"> -->
+    <a href="{% url "crud:detail" s.pk %}">
+      {{ s.name }} ({{ s.major }})
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+  
+{% endblock content %}

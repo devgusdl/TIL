@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/util/lotto_out/">
+  <div>
+    <label for="no1">1: </label>
+    <input type="number" id="no1" name="num1">
+  </div>
+  <div>
+    <label for="no2">2: </label>
+    <input type="number" id="no2" name="num2">
+  </div>
+  <div>
+    <label for="no3">3: </label>
+    <input type="number" id="no3" name="num3">
+  </div>
+  <div>
+    <label for="no4">4: </label>
+    <input type="number" id="no4" name="num4">
+  </div>
+  <div>
+    <label for="no5">5: </label>
+    <input type="number" id="no5" name="num5">
+  </div>
+  <div>
+    <label for="no6">6: </label>
+    <input type="number" id="no6" name="num6">
+  </div>
+  <div>
+    <button>확인!</button>
+  </div>
+</form>
+
+{% endblock content %}

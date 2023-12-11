@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>당신은 {{ result }} 입니다.</h1>
+
+<h2>입력 번호</h2>
+<ul>
+  {% for num in my %}
+    {% if num in same %}
+    <li style="color: green;">{{ num }}</li>
+    {% else %}
+    <li style="color: gray;">{{ num }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>실제 번호</h2>
+<ul>
+  {% for num in real %}
+  <li>{{ num }}</li>
+  {% endfor %}
+  <li>bonus: {{ bonus }}</li>
+</ul>
+
+
+{% endblock content %}

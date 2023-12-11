@@ -1,0 +1,14 @@
+{% extends "base2.html" %}
+
+{% block content %}
+<h1>Edit Student</h1>
+
+<form action="{% url "crud:update" student.pk %}" method="POST">
+  {% csrf_token %}
+  {{ form.as_p}}
+  <div>
+    <button>제출</button>
+  </div>
+</form>
+
+{% endblock content %}
