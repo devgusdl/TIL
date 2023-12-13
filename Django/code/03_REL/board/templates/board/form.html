@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% comment %} templates/board/form.html {% endcomment %}
+
+{% block content %}
+<form method="POST">
+  {% csrf_token %}
+
+  {{ form.as_p }}
+
+  <div>
+    <button>제출</button>
+  </div>
+</form>
+{% endblock content %}

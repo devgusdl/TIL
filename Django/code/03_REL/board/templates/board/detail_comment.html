@@ -1,0 +1,25 @@
+
+{% if request.user.is_authenticated %}
+<form action="{% url "board:create_comment" article.pk %}" method="POST">
+  {% csrf_token %}
+  {{ form }}
+  <button>댓글작성</button>
+</form>
+{% endif %}
+
+<div>
+  <ul>
+  {% for comment in article.comment_set.all %}
+    <li>
+      {{ comment.user }} => {{ comment.content }}
+
+      {% if request.user == comment.user %}
+      <form action="{% url "board:delete_comment" article.pk comment.pk %}" method="POST" style="display: inline-block;">
+        {% csrf_token %}
+        <button onclick="return confirm('댓글 삭제?')">삭제</button>
+      </form>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
