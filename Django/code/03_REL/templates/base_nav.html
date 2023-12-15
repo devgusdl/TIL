@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li>
+      <a href="{% url "board:index" %}">Home</a>
+    </li>
+    {% comment %} 요청 보낸 사용자가 로그인하지 않았다면 {% endcomment %}
+    {% if not request.user.is_authenticated %}
+    <li>
+      <a href="{% url "accounts:login" %}">Login</a>
+    </li>
+    <li>
+      <a href="{% url "accounts:signup" %}">Signup</a>
+    </li>
+    {% comment %} 요청 보낸 사용자가 로그인 했다면 {% endcomment %}
+    {% else %}
+    <li>
+      <a href="{% url "board:create" %}">New</a>
+    </li>
+    <li>
+      <a href="{% url "accounts:logout" %}">{{ request.user }} - Logout</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
